@@ -8,6 +8,16 @@ async function main() {
       duration: 300,
       name: "Curso de React Native",
       description: "Curso excelente de React Native com Gabriel Castro",
+      teacher: {
+        connectOrCreate: {
+          where: {
+            name: "Daniele Leão",
+          },
+          create: {
+            name: "Daniele Leão",
+          },
+        },
+      },
     },
   });
 
